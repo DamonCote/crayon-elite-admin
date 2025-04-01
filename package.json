@@ -1,0 +1,90 @@
+{
+    "name": "crayon-elite-admin",
+    "version": "0.0.01",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "vite lint"
+    },
+    "author": "DamonCote <damoncote7@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DamonCote/crayon-elite-admin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DamonCote/crayon-elite-admin/issues"
+    },
+    "homepage": "https://github.com/DamonCote/crayon-elite-admin#readme",
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "@simonwep/pickr": "^1.9.0",
+        "ant-design-vue": "4.x",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.3.2",
+        "bootstrap-vue-next": "^0.15.5",
+        "click-outside-vue3": "^4.0.1",
+        "core-js": "^3.34.0",
+        "feather-icons": "^4.29.1",
+        "lottie-web": "^5.12.2",
+        "luxon": "^3.4.3",
+        "maska": "^2.1.10",
+        "nanoid": "^5.0.7",
+        "node-sass": "^9.0.0",
+        "prismjs": "^1.29.0",
+        "sass-loader": "^13.3.2",
+        "simplebar": "^6.2.5",
+        "simplebar-vue": "^2.3.3",
+        "unplugin-element-plus": "^0.8.0",
+        "velocity-animate": "^1.5.2",
+        "vite-plugin-compression": "^0.5.1",
+        "vue": "^3.3.11",
+        "vue-feather": "^2.0.0",
+        "vue-i18n": "^9.8.0",
+        "vue-prismjs": "^1.2.0",
+        "vue-router": "4.2.5",
+        "vuex": "^4.1.0",
+        "blueimp-md5": "^2.19.0",
+        "yarn": "^1.22.21"
+    },
+    "devDependencies": {
+        "@achrinza/node-ipc": "^10.1.7",
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.19.1",
+        "@vitejs/plugin-vue": "^4.3.4",
+        "@vue/cli-plugin-babel": "~5.0.8",
+        "@vue/cli-plugin-eslint": "~5.0.8",
+        "@vue/compiler-sfc": "^3.2.45",
+        "eslint": "^8.31.0",
+        "eslint-plugin-vue": "^7.0.0",
+        "sass": "~1.64.0",
+        "unplugin-auto-import": "^0.16.6",
+        "unplugin-vue-components": "^0.25.1",
+        "vite": "^4.4.9"
+    },
+    "resolutions": {
+        "autoprefixer": "10.4.5"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/vue3-essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "@babel/eslint-parser"
+        },
+        "rules": {
+            "vue/multi-word-component-names": "off"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

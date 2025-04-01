@@ -1,0 +1,23 @@
+{
+    "t-menu": "Menu",
+    "t-manage": "Manage",
+    "t-dashboards": "Dashboard",
+    "t-email": "Email",
+    "t-list": "List",
+    "t-overview": "Overview",
+    "t-signin": "Sign In",
+    "t-basic": "Basic",
+    "t-signup": "Sign Up",
+    "t-password-reset": "Password Reset",
+    "t-logout": "Logout",
+    "t-success-message": "Success Message",
+    "t-errors": "Errors",
+    "t-404-basic": "404 Basic",
+    "t-404-cover": "404 Cover",
+    "t-404-alt": "404 Alt",
+    "t-500": "500",
+    "t-offline-page": "Offline Page",
+    "t-starter": "Starter",
+    "t-profile": "Profile",
+    "t-settings": "Settings"
+}
