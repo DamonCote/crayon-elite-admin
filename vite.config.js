@@ -19,7 +19,7 @@ export default defineConfig({
     },
     outDir: "dist",
     server: {
-        port: 3000,
+        port: 3005,
         host: "local.crayon-elite.evoart.ai",
         open: true,
         https: {
