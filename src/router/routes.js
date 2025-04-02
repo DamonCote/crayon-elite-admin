@@ -13,7 +13,7 @@ export default [
     {
         path: "/login",
         name: "login",
-        component: () => import("../views/authenticate/login.vue"),
+        component: () => import("../views/account/login.vue"),
         meta: {
             title: "Login",
             beforeResolve(routeTo, routeFrom, next) {
