@@ -1,0 +1,14 @@
+/*
+Crayon Elite Admin
+Author: DamonCote
+Version: 1.1.0
+Website: https://www.evoart.ai
+Contact: damoncote7@gmail.com
+File: Custom Bootstrap Css File
+*/
+@import "./bootstrap.scss";
+@import "./plugins/icons";
+@import "./themes/default";
+
+// Pages
+@import "pages/authentication";
