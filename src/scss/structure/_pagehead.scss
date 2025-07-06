@@ -1,0 +1,47 @@
+// _pagehead.scss
+//
+// Page Head Styles
+//
+// This file contains styles for the page header, including the page title box,
+
+.page-title-box {
+    padding: calc(#{$grid-gutter-width} * 1.5) 0;
+    background-color: transparent !important;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: none;
+    margin: 0;
+    color: var(--#{$prefix}page-title-color);
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+
+        .breadcrumb-item {
+            color: var(--#{$prefix}header-item-color);
+        }
+    }
+
+    h4 {
+        color: var(--#{$prefix}page-title-color);
+        font-size: 15px !important;
+        text-transform: uppercase;
+        font-weight: var(--#{$prefix}font-weight-semibold);
+    }
+
+    @media (min-width: 1024.1px) {
+        margin: -19px 0 0 0;
+    }
+
+    @media (max-width: 1024px) {
+        padding-top: 0;
+    }
+}
+
+.page-title {
+    color: var(--#{$prefix}page-title-color);
+}
+
+.page-sub-title {
+    color: var(--#{$prefix}page-title-sub-color);
+}

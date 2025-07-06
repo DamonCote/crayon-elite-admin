@@ -1,20 +1,25 @@
-import { mapState, mapActions } from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
+
+export const authComputed = {
+    ...mapState("auth", {
+        currentUser: (state) => state.currentUser,
+    }),
+    ...mapGetters("auth", ["loggedIn"]),
+};
 
 export const layoutComputed = {
     ...mapState("layout", {
-        layoutType: (state) => state.layoutType,
-        sidebarSize: (state) => state.sidebarSize,
-        layoutWidth: (state) => state.layoutWidth,
-        topbar: (state) => state.topbar,
-        mode: (state) => state.mode,
-        position: (state) => state.position,
-        sidebarView: (state) => state.sidebarView,
+        layout: (state) => state.layout,
         sidebarColor: (state) => state.sidebarColor,
-        sidebarImage: (state) => state.sidebarImage,
-        visibility: (state) => state.visibility,
-        bodybg: (state) => state.bodybg,
-        layoutTheme: (state) => state.layoutTheme,
-        themeColor: (state) => state.themeColor,
+        sidebarSize: (state) => state.sidebarSize,
+        mode: (state) => state.mode,
+        cardLayout: (state) => state.cardLayout,
+        layoutWidth: (state) => state.layoutWidth,
+        position: (state) => state.position,
+        topbar: (state) => state.topbar,
+        topbarImage: (state) => state.topbarImage,
+        preloader: (state) => state.preloader,
+        layoutMenuData: (state) => state.layoutMenuData,
     }),
 };
 
@@ -26,20 +31,17 @@ export const authMethods = mapActions("auth", [
 ]);
 
 export const layoutMethods = mapActions("layout", [
-    "changeLayoutType",
-    "changeLayoutWidth",
-    "changeSidebarSize",
-    "changeTopbar",
-    "changeMode",
-    "changePosition",
-    "changeSidebarView",
+    "changeLayout",
     "changeSidebarColor",
-    "changeSidebarImage",
+    "changeSidebarSize",
+    "changeMode",
+    "changeCardLayout",
+    "changeLayoutWidth",
+    "changePosition",
+    "changeTopbar",
+    "changeTopbarImage",
     "changePreloader",
-    "changeVisibility",
-    "changeBodybg",
-    "changeThemes",
-    "changeThemesColor",
+    "changeMenudata",
 ]);
 
 export const authFackMethods = mapActions("authfack", [

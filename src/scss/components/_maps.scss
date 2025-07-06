@@ -1,0 +1,52 @@
+$theme-colors-brand: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+$theme-colors-text-brand: null;
+$theme-colors-bg-subtle-brand: null;
+$theme-colors-border-subtle-brand: null;
+
+@if $enable-brand-mode {
+    // scss-docs-start theme-text-brand-map
+    $theme-colors-text-brand: ("primary": $primary-text-emphasis-brand,
+        "secondary": $secondary-text-emphasis-brand,
+        "success": $success-text-emphasis-brand,
+        "info": $info-text-emphasis-brand,
+        "warning": $warning-text-emphasis-brand,
+        "danger": $danger-text-emphasis-brand,
+        "light": $light-text-emphasis-brand,
+        "dark": $dark-text-emphasis-brand,
+    );
+    // scss-docs-end theme-text-dark-map
+
+    // scss-docs-start theme-bg-subtle-dark-map
+    $theme-colors-bg-subtle-brand: ("primary": $primary-bg-subtle-brand,
+        "secondary": $secondary-bg-subtle-brand,
+        "success": $success-bg-subtle-brand,
+        "info": $info-bg-subtle-brand,
+        "warning": $warning-bg-subtle-brand,
+        "danger": $danger-bg-subtle-brand,
+        "light": $light-bg-subtle-brand,
+        "dark": $dark-bg-subtle-brand,
+    );
+    // scss-docs-end theme-bg-subtle-brand-map
+
+    // scss-docs-start theme-border-subtle-brand-map
+    $theme-colors-border-subtle-brand: ("primary": $primary-border-subtle-brand,
+        "secondary": $secondary-border-subtle-brand,
+        "success": $success-border-subtle-brand,
+        "info": $info-border-subtle-brand,
+        "warning": $warning-border-subtle-brand,
+        "danger": $danger-border-subtle-brand,
+        "light": $light-border-subtle-brand,
+        "dark": $dark-border-subtle-brand,
+    );
+    // scss-docs-end theme-border-subtle-brand-map
+}

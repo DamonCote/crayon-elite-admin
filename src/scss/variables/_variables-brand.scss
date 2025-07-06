@@ -1,0 +1,166 @@
+// Dark color mode variables
+//
+// Custom variables for the `[data-bs-theme="brand"]` theme. Use this as a starting point for your own custom color modes by creating a new theme-specific file like `_variables-brand.scss` and adding the variables you need.
+
+//
+// Global colors
+//
+
+//brand body bg customization
+$body-bg-brand: #010036;//#01003b;
+
+// scss-docs-start sass-brand-mode-vars
+// scss-docs-start theme-text-brand-variables
+$primary-text-emphasis-brand:                            tint-color($primary, 20%);
+$secondary-text-emphasis-brand:                          tint-color($secondary, 20%);
+$success-text-emphasis-brand:                            tint-color($success, 20%);
+$info-text-emphasis-brand:                               tint-color($info, 20%);
+$warning-text-emphasis-brand:                            tint-color($warning, 20%);
+$danger-text-emphasis-brand:                             tint-color($danger, 20%);
+$light-text-emphasis-brand:                              tint-color($body-bg-brand, 35%);
+$dark-text-emphasis-brand:                               tint-color($body-bg-brand, 15%);
+// scss-docs-end theme-text-brand-variables
+
+// scss-docs-start theme-bg-subtle-brand-variables
+$primary-bg-subtle-brand:                                rgba($primary, 0.15);
+$secondary-bg-subtle-brand:                              rgba($secondary, 0.15);
+$success-bg-subtle-brand:                                rgba($success, 0.15);
+$info-bg-subtle-brand:                                   rgba($info, 0.15);
+$warning-bg-subtle-brand:                                rgba($warning, 0.15);
+$danger-bg-subtle-brand:                                 rgba($danger, 0.15);
+$light-bg-subtle-brand:                                  tint-color($body-bg-brand, 10%);
+$dark-bg-subtle-brand:                                   tint-color($body-bg-brand, 15%);
+// scss-docs-end theme-bg-subtle-dark-variables
+
+// scss-docs-start theme-border-subtle-dark-variables
+$primary-border-subtle-brand:                            shade-color($primary, 50%);
+$secondary-border-subtle-brand:                          shade-color($secondary, 50%);
+$success-border-subtle-brand:                            shade-color($success, 50%);
+$info-border-subtle-brand:                               shade-color($info, 50%);
+$warning-border-subtle-brand:                            shade-color($warning, 50%);
+$danger-border-subtle-brand:                             shade-color($danger, 50%);
+$light-border-subtle-brand:                              tint-color($body-bg-brand, 12%);
+$dark-border-subtle-brand:                               tint-color($body-bg-brand, 10%);
+// scss-docs-end theme-border-subtle-dark-variables
+
+$body-color-brand:                                       tint-color($body-bg-brand, 80%);
+$body-secondary-color-brand:                             tint-color($body-bg-brand, 60%);
+$body-secondary-bg-brand:                                tint-color($body-bg-brand, 3.5%);
+$body-tertiary-color-brand:                              rgba($body-color-brand, .5);
+$body-tertiary-bg-brand:                                 shift-color($body-bg-brand, 0.5%);
+$body-emphasis-color-brand:                              $white;
+$border-color-brand:                                     tint-color($body-bg-brand, 15%);
+$border-color-translucent-brand:                         tint-color($body-bg-brand, 15%);
+$headings-color-brand:                                   null;
+$link-color-brand:                                       tint-color($primary, 40%);
+$link-hover-color-brand:                                 shift-color($link-color-brand, -$link-shade-percentage);
+$code-color-brand:                                       shift-color($code-color, 10%);
+
+//custom only default themes colors
+$light-brand:                                            tint-color($body-bg-brand, 15%);
+$brand-color:                                             tint-color($body-bg-brand, 10%);
+
+//
+// Forms
+//
+
+$form-select-indicator-color-brand:                      $body-color-brand;
+$form-select-indicator-brand:                            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color-brand}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+
+$form-switch-color-brand:                                rgba($white, .25);
+$form-switch-bg-image-brand:                             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color-brand}'/></svg>");
+
+// scss-docs-start form-validation-colors-brand
+$form-valid-color-brand:                                 $green-400;
+$form-valid-border-color-brand:                          $green-400;
+$form-invalid-color-brand:                               $red-400;
+$form-invalid-border-color-brand:                        $red-400;
+// scss-docs-end form-validation-colors-brand
+
+//
+// Accordion
+//
+
+$accordion-icon-color-brand:         $primary-text-emphasis-brand;
+$accordion-icon-active-color-brand:  $primary-text-emphasis-brand;
+
+$accordion-button-icon-brand:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color-brand}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon-brand:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color-brand}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+// scss-docs-end sass-dark-mode-vars
+
+/* ===========================Custom Variables ======================================*/
+
+$prismjs-bg-brand:                               $body-bg-dark;
+
+//footer 
+$footer-bg-brand:                                $body-secondary-bg-brand;
+$footer-color-brand:                             $body-secondary-color-brand;
+
+//topbar light
+$menu-wrapper-bg-brand:                          $white;
+$menu-wrapper-pattern-color-brand:               #f8f9ff;
+$header-bg-brand:                                $white;
+$header-border-color-brand:                      $border-color;
+$header-item-color-brand:                        $gray-800;
+$header-item-hover-color-brand:                  $primary;
+$header-item-hover-bg-brand:                     rgba($primary, 0.15);
+$header-item-active-color-brand:                 $primary;
+$header-sub-item-color-brand:                    $body-secondary-color;
+$header-sub-item-hover-color-brand:              $primary;
+$header-sub-item-active-color-brand:             $primary;
+$page-title-color-brand:                         $gray-900;
+$page-title-sub-color-brand:                     $body-secondary-color;
+
+//topbar dark
+$dark-menu-wrapper-bg-brand:                     tint-color($body-bg-dark, 1.5%);
+$dark-menu-wrapper-pattern-color-brand:          #2b2544;
+$dark-header-bg-brand:                           tint-color($body-bg-dark, 1.5%);
+$dark-header-border-color-brand:                 tint-color($body-bg-dark, 6%);
+$dark-header-item-color-brand:                   #b0c4d9;
+$dark-header-item-hover-color-brand:             $white;
+$dark-header-item-hover-bg-brand:                tint-color($body-bg-dark, 6%);
+$dark-header-item-active-color-brand:            $white;
+$dark-header-sub-item-color-brand:               $body-secondary-color;
+$dark-header-sub-item-hover-color-brand:         $white;
+$dark-header-sub-item-active-color-brand:        $white;
+$dark-page-title-color-brand:                    #e7ebef;
+$dark-page-title-sub-color-brand:                #b0c4d9;
+
+//topbar Brand
+$brand-menu-wrapper-bg-brand:                    tint-color($body-bg-brand, 1.5%);
+$brand-menu-wrapper-pattern-color-brand:         #100f47;
+$brand-header-bg-brand:                          tint-color($body-bg-brand, 1.5%);
+$brand-header-border-color-brand:                tint-color($body-bg-brand, 10%);
+$brand-header-item-color-brand:                  #b0c4d9;
+$brand-header-item-hover-color-brand:            $white;
+$brand-header-item-hover-bg-brand:               #0b2b78;
+$brand-header-item-active-color-brand:           $white;
+$brand-header-sub-item-color-brand:              $body-secondary-color;
+$brand-header-sub-item-hover-color-brand:        $primary;
+$brand-header-sub-item-active-color-brand:       $primary;
+$brand-page-title-color-brand:                   #e7ebef;
+$brand-page-title-sub-color-brand:               #b0c4d9;
+
+//sidebar light
+$vertical-menu-bg-brand:                           $white;
+$vertical-border-color-brand:                      $border-color;
+$vertical-item-color-brand:                        $gray-800;
+$vertical-item-hover-color-brand:                  $primary;
+$vertical-item-hover-bg-brand:                     rgba($primary, 0.15);
+$vertical-item-active-color-brand:                 $primary;
+$vertical-sub-item-color-brand:                    $body-secondary-color;
+$vertical-sub-item-hover-color-brand:              $primary;
+$vertical-sub-item-active-color-brand:             $primary;
+$vertical-menu-title-brand:                        $primary;
+
+//dark sidebar
+$dark-vertical-menu-bg-brand:                      shift-color($body-bg-brand, 0.2%);
+$dark-vertical-border-color-brand:                 tint-color($body-bg-brand, 10%);
+$dark-vertical-item-color-brand:                   #b0c4d9;
+$dark-vertical-item-hover-color-brand:             $white;
+$dark-vertical-item-hover-bg-brand:                transparent;
+$dark-vertical-item-active-color-brand:            $white;
+$dark-vertical-sub-item-color-brand:               #8290b1;
+$dark-vertical-sub-item-hover-color-brand:         $white;
+$dark-vertical-sub-item-active-color-brand:        $white;
+$dark-vertical-menu-title-brand:                   #98a9bc;

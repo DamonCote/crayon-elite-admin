@@ -1,0 +1,18 @@
+// 
+// breadcrumb.scss
+//
+
+// Breadcrumb item arrow
+.breadcrumb-item {
+    >a {
+        color: var(--#{$prefix}breadcrumb-divider-color);
+    }
+
+    +.breadcrumb-item {
+        &::before {
+            font-family: "bootstrap-icons";
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+//
+// _variables-custom.scss
+
+//font-sizes
+$custom-font-sizes: (
+    "3xs": 0.625rem,
+    "2xs": 0.6875rem,
+    "xs": 0.75rem,
+    "sm": 0.8125rem,
+    "md": 0.875rem,
+    "base": 0.8125rem,
+    "lg": 1rem,
+    "xl": 1.0625rem,
+    "2xl": 1.125rem,
+    "3xl": 1.25rem,
+    "4xl": 1.375rem,
+    "5xl": 1.5rem,
+);
+
+//font-weight
+$font-weights: (
+    "light" 300,
+    "normal" 400,
+    "medium" 500,
+    "semibold" 600,
+    "bold" 700
+);
+
+$grid-gutter-width-custom: 1.125rem;
+
+$prismjs-bg: #24292e;
+
+// borderless cards
+$card-border-width-custom: 0;
+$card-header-border-width: 0;
+$card-bottom-padding: 0;
+$card-shadow: rgba(0, 0, 0, 0.02) 0px 2px 19px;
+
+//border cards
+$card-border-width-custom-border: 1px;
+$card-header-border-width-border: 0;
+$card-bottom-padding-border: 0;
+$card-shadow-border: none;
+$body-bg-border: $white;
+
+// Header Menu
+$menu-wrapper-width: 240px;
+$menu-z-index: 1003;
+$menu-sub-item-padding-x: 1.8rem;
+$menu-sub-item-padding-y: 0.55rem;
+
+$header-height: 70px;
+$header-z-index: 1002;
+$header-item-padding-x: 1.2rem;
+$header-item-padding-y: 0.75rem;
+$header-sub-item-padding-y: 0.55rem;
+$header-sub-item-padding-x: 1.2rem;
+$header-item-icon-width: 1.75rem;
+$header-item-font-size: 0.8125rem;
+$header-item-font-family: var(--#{$prefix}font-sans-serif);
+$header-item-font-weight: 400;
+$header-item-sub-font-size: 0.8125rem;
+
+// page- titles
+$page-title-box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+$page-title-border: none;
+
+// Horizontal horizontal-menu-dropdown-box-shadow
+$horizontal-menu-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+$horizontal-menu-dropdown-box-shadow: 0 0px 5px rgba(15, 34, 58, 0.15);
+$horizontal-menu-dropdown-min-width: 12rem;
+
+// Boxed layout width
+$boxed-layout-width: 1400px;
+
+// Footer
+$footer-height: 60px;
+$footer-bg: $white;
+$footer-color: #848a8d;
+
+// Chat
+$chat-primary-bg: var(--#{$prefix}light);
+$chat-secondary-bg: rgba(var(--#{$prefix}primary-rgb), 1);
+$chat-secondary-color: var(--#{$prefix}white);
+
+//topbar light
+$menu-wrapper-bg: $white;
+$menu-wrapper-pattern-color: #f8f9ff;
+$header-bg: $white;
+$header-border-color: $border-color;
+$header-item-color: $gray-800;
+$header-item-hover-color: $primary;
+$header-item-hover-bg: rgba($primary, 0.15);
+$header-item-active-color: $primary;
+$header-sub-item-color: $body-secondary-color;
+$header-sub-item-hover-color: $primary;
+$header-sub-item-active-color: $primary;
+$page-title-color: $gray-900;
+$page-title-sub-color: $body-secondary-color;
+
+//topbar dark
+$dark-menu-wrapper-bg: #091124;
+$dark-menu-wrapper-pattern-color: #121c34;
+$dark-header-bg: #091124;
+$dark-header-border-color: #1a2746;
+$dark-header-item-color: #b0c4d9;
+$dark-header-item-hover-color: $white;
+$dark-header-item-hover-bg: #142141;
+$dark-header-item-active-color: $white;
+$dark-header-sub-item-color: $body-secondary-color;
+$dark-header-sub-item-hover-color: $primary;
+$dark-header-sub-item-active-color: $primary;
+$dark-page-title-color: #e7ebef;
+$dark-page-title-sub-color: #b0c4d9;
+
+//topbar Brand
+$brand-menu-wrapper-bg: #001c5e;
+$brand-menu-wrapper-pattern-color: #042572;
+$brand-header-bg: #001c5e;
+$brand-header-border-color: #06297c;
+$brand-header-item-color: #b0c4d9;
+$brand-header-item-hover-color: $white;
+$brand-header-item-hover-bg: #0b2b78;
+$brand-header-item-active-color: $white;
+$brand-header-sub-item-color: $body-secondary-color;
+$brand-header-sub-item-hover-color: $primary;
+$brand-header-sub-item-active-color: $primary;
+$brand-page-title-color: #e7ebef;
+$brand-page-title-sub-color: #b0c4d9;
+
+//vertical menu
+$vertical-menu-width: 250px;
+$vertical-menu-width-sm: 70px;
+$vertical-menu-width-md: 180px;
+
+$vertical-menu-bg: $white;
+$vertical-border-color: $border-color;
+$vertical-item-color: $gray-800;
+$vertical-item-hover-color: $primary;
+$vertical-item-hover-bg: rgba($primary, 0.15);
+$vertical-item-active-color: $primary;
+$vertical-sub-item-color: $body-secondary-color;
+$vertical-sub-item-hover-color: $primary;
+$vertical-sub-item-active-color: $primary;
+$vertical-menu-title: $primary;
+
+//dark sidebar
+$dark-vertical-menu-bg: #091124;
+$dark-vertical-border-color: #1a2746;
+$dark-vertical-item-color: #b0c4d9;
+$dark-vertical-item-hover-color: $white;
+$dark-vertical-item-hover-bg: transparent;
+$dark-vertical-item-active-color: $white;
+$dark-vertical-sub-item-color: #8290b1;
+$dark-vertical-sub-item-hover-color: $white;
+$dark-vertical-sub-item-active-color: $white;
+$dark-vertical-menu-title: #98a9bc;
+
+$asset-path: "~@/assets/images/";

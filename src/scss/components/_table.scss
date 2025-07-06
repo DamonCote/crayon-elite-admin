@@ -1,0 +1,134 @@
+// 
+// _table.scss
+// 
+
+.table {
+    >thead {
+        border-color: var(--#{$prefix}table-border-color);
+    }
+
+    >:not(:first-child) {
+        border-top-width: $table-border-width;
+    }
+}
+
+
+.table-nowrap {
+
+    th,
+    td {
+        white-space: nowrap;
+    }
+}
+
+// card table
+
+.table-card {
+    margin: 0 (-$card-spacer-x) (-$card-spacer-y) (-$card-spacer-x);
+
+    th,
+    td {
+
+        &:first-child {
+            padding-left: var(--#{$prefix}card-spacer-x);
+        }
+
+        &:last-child {
+            padding-right: var(--#{$prefix}card-spacer-x);
+        }
+    }
+
+    .table> :not(:first-child) {
+        border-top-width: $table-border-width;
+    }
+}
+
+.table {
+    .form-check {
+        padding-left: 0px;
+        margin-bottom: 0px;
+
+        .form-check-input {
+            margin-left: 0px;
+            margin-top: 0px;
+            float: none;
+            vertical-align: middle;
+        }
+    }
+
+    .sort {
+        position: relative;
+        padding-inline-end: calc($table-cell-padding-x * 1.7);
+
+        &::before {
+            content: "\f229";
+            position: absolute;
+            right: 0.5rem;
+            top: 20px;
+            font-size: .5rem;
+            font-family: "bootstrap-icons";
+        }
+
+        &::after {
+            position: absolute;
+            right: 0.5rem;
+            content: "\f235";
+            font-family: "bootstrap-icons";
+            font-size: .5rem;
+            top: 14px;
+        }
+    }
+}
+
+.table-custom-effect {
+    tr {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            border-left: 2px solid transparent;
+        }
+
+        &.table-active {
+            &::before {
+                border-left-color: $primary;
+            }
+        }
+    }
+}
+
+@each $state in map-keys($theme-colors) {
+    .border-#{$state} {
+        &.table {
+            >thead {
+                border-color: var(--#{$prefix}#{$state}) !important;
+                border-bottom-color: var(--#{$prefix}#{$state}) !important;
+            }
+        }
+    }
+}
+
+/* ===== Dark Scrollbar CSS ===== */
+/* Firefox */
+[data-bs-theme="dark"] {
+    *::-webkit-scrollbar-track {
+        background: var(--#{$prefix}secondary-bg);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--#{$prefix}light);
+        border: 3px solid var(--#{$prefix}secondary-bg);
+    }
+}
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0 6px;
+
+    tr {
+        background-color: var(--#{$prefix}secondary-bg);
+    }
+}

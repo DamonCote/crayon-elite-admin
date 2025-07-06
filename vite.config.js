@@ -28,7 +28,7 @@ export default defineConfig({
         },
         proxy: {
             "/api/v1": {
-                target: "https://api-crayon.evoart.ai",
+                target: "https://api-local.crayon.evoart.ai:8443",
                 changeOrigin: true,
                 secure: false,
             },

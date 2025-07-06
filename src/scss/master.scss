@@ -7,8 +7,63 @@ Contact: damoncote7@gmail.com
 File: Custom Bootstrap Css File
 */
 @import "./bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables/variables";
+@import "variables/variables-custom";
+@import "variables/variables-dark";
+@import "variables/variables-brand";
+@import "./node_modules/bootstrap/scss/mixins";
+
 @import "./plugins/icons";
+
+@import "./structure/topbar";
+@import "./structure/menu";
+@import "./structure/vertical";
+@import "./structure/pagehead";
+@import "./structure/footer";
+@import "./structure/layouts";
+
+// Components
+@import "components/avatar";
+@import "components/accordion";
+@import "components/helper";
+@import "components/preloader";
+@import "components/forms";
+@import "components/demos";
+@import "components/print";
+@import "components/ribbons";
+@import "components/toast";
+@import "components/scrollspy";
+
+// Bootstrap components
+@import "components/maps";
+@import "components/root";
+@import "components/reboot";
+@import "components/alerts";
+@import "components/badge";
+@import "components/buttons";
+@import "components/breadcrumb";
+@import "components/card";
+@import "components/dropdown";
+@import "components/nav";
+@import "components/table";
+@import "components/modal";
+@import "components/pagination";
+@import "components/progress";
+@import "components/popover";
+@import "components/type";
+@import "components/form-check";
+@import "components/form-control";
+@import "components/list-group";
+@import "components/tooltip";
+@import "components/colored-links";
+
 @import "./themes/default";
+
+@import "plugins/scrollbar";
 
 // Pages
 @import "pages/authentication";
+@import "pages/dashboard";

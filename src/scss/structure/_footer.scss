@@ -1,0 +1,15 @@
+// footer
+// Footer styles for the layout
+// This file is part of the Crayon Elite Admin project.
+
+.footer {
+    bottom: 0;
+    padding: 20px calc(#{$grid-gutter-width} * 0.5);
+    position: absolute;
+    right: 0;
+    color: var(--#{$prefix}footer-color);
+    left: 0;
+    height: var(--#{$prefix}footer-height);
+    background-color: var(--#{$prefix}footer-bg);
+    border-top: 1px solid var(--#{$prefix}border-color);
+}
